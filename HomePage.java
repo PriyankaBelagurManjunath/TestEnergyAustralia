@@ -24,16 +24,4 @@ public class HomePage extends AbstractPage implements HomePageElements {
         getDriver().navigate().to(PAGE_HOME_URL);
     }
 
-    // Type given phrase
-    public void enterSearchPhrase(String phrase) {
-        WebElement searchField = driverWait(5).until(ExpectedConditions.elementToBeClickable(BY_SEARCH_FIELD));
-        searchField.sendKeys(phrase);
-    }
-
-    // Click on Search Icon to see the search results
-    public void clickOnSearchBoxIcon() {
-        WebElement clickSearchIcon = driverWait(20).until(ExpectedConditions.elementToBeClickable(BY_SEARCH_BOX_ICON));
-        clickSearchIcon.click();
-    }
-
-}
+   }
