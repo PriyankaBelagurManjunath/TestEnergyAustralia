@@ -31,5 +31,9 @@ public class SearchProductSteps implements En {
             userActions.listAllSongsungby(text);
          });
         
+         When("^user hits the url and validate the page$", () -> {
+            userActions.verifyURL();
+        });
+        
     }
 }
