@@ -66,5 +66,18 @@ public void listAllSongsungby(String phrase) {
 }
     
 }
+	
+public void verifyURL()
+    {
+    	String URL= getDriver().getCurrentUrl();
+    	if (URL.contains("festivals"))
+    	{
+    		System.out.println("Correct URL Launched");
+    	}
+    	else {
+    		System.out.println("Incorrcet URL");
+    	}
+    		
+    }
 }
 
