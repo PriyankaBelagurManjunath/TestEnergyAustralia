@@ -1,4 +1,5 @@
 # Defining application feature below which I want to test
+@Test
 Feature: Search products
         As a user,
         I want to search a product from home page
@@ -6,6 +7,10 @@ Feature: Search products
 # Providing background steps which I want to perform before every scenario.
   Background:
       Given launch a browser and navigate website home page
+      
+  Scenario: To Validate the loaded URL
+ 
+ 	When user hits the url and validate the page
       
   Scenario: To list out all the band names
   
@@ -19,3 +24,5 @@ Feature: Search products
 Scenario: To list out the songs sung by any specific band
  
  	When user lists all the songs sung by "Squint-281 " 
+        
+ 
