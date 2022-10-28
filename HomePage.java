@@ -9,7 +9,7 @@ import seleniumassignment.automation.pom.uielements.HomePageElements;
 
 public class HomePage extends AbstractPage implements HomePageElements {
 
-    private static final String PAGE_HOME_URL = "https://www.bunnings.com.au";
+    private static final String PAGE_HOME_URL = "http://localhost:4200/festivals";
 
     //
     By BY_SEARCH_FIELD = By.xpath(HomePageElements.SEARCH_FIELD_XPATH);
